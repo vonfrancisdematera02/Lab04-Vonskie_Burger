@@ -1,0 +1,80 @@
+.description {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 50px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #fafaf8 0%, #f5f1ec 100%);
+  color: var(--text);
+}
+
+.description-text {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.description h1 {
+  font-size: 52px;
+  margin: 0 0 24px 0;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.description button {
+  padding: 14px 48px;
+  border: none;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 61, 0.25);
+  text-transform: uppercase;
+}
+
+.description button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 61, 0.35);
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+}
+
+.description button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .description {
+    min-height: 400px;
+    padding: 60px 30px;
+  }
+
+  .description h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .description p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .description button {
+    padding: 12px 40px;
+    font-size: 13px;
+  }
+}

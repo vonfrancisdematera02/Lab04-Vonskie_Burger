@@ -1,0 +1,36 @@
+/* App-wide styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: var(--primary) #f1f1f1;
+  scrollbar-width: thin;
+}
+
